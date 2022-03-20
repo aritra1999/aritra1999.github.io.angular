@@ -1,0 +1,81 @@
+<div
+  class="h-[calc(100vh-80px)] border-r w-72 border-slate-300 absolute ease-in-out transition-all duration-300 z-30 left-0 top-20 pr-4"
+  [ngClass]="[showLeftBar ? 'translate-x-0' : '-translate-x-full']">
+
+  <div class="pl-4 py-4"><button
+    class="border border-slate-200 text-indigo-600 hover:shadow-md py-4 pl-4 pr-6 rounded-full flex items-center font-semibold"><svg
+      stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+      class="mr-4 h-6 w-6 font-bold transform -rotate-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M4 21a1 1 0 0 0 .24 0l4-1a1 1 0 0 0 .47-.26L21 7.41a2 2 0 0 0 0-2.82L19.42 3a2 2 0 0 0-2.83 0L4.3 15.29a1.06 1.06 0 0 0-.27.47l-1 4A1 1 0 0 0 3.76 21 1 1 0 0 0 4 21zM18 4.41 19.59 6 18 7.59 16.42 6zM5.91 16.51 15 7.41 16.59 9l-9.1 9.1-2.11.52z">
+      </path>
+    </svg>Contect Me</button></div>
+<div
+  class="w-full flex items-center justify-between bg-indigo-100 text-indigo-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <div class="flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 14 16"
+      class="h-5 w-5 mr-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+        d="M14 9l-1.13-7.14c-.08-.48-.5-.86-1-.86H2.13c-.5 0-.92.38-1 .86L0 9v5c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V9zm-3.28.55l-.44.89c-.17.34-.52.56-.91.56H4.61c-.38 0-.72-.22-.89-.55l-.44-.91c-.17-.33-.52-.55-.89-.55H1l1-7h10l1 7h-1.38c-.39 0-.73.22-.91.55l.01.01z">
+      </path>
+    </svg>Inbox</div>
+  <div>6</div>
+</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+    </path>
+  </svg>Starred</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M12 4c-4.879 0-9 4.121-9 9s4.121 9 9 9 9-4.121 9-9-4.121-9-9-9zm0 16c-3.794 0-7-3.206-7-7s3.206-7 7-7 7 3.206 7 7-3.206 7-7 7zm8.292-13.292-3.01-3 1.412-1.417 3.01 3zM6.698 3.707l-2.99 2.999L2.29 5.294l2.99-3z">
+    </path>
+    <path d="M14.832 10.555A1 1 0 0 0 14 9H9v2h3.132l-2.964 4.445A1 1 0 0 0 10 17h5v-2h-3.132l2.964-4.445z"></path>
+  </svg>Snoozed</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="m21.426 11.095-17-8A.999.999 0 0 0 3.03 4.242L4.969 12 3.03 19.758a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81zM5.481 18.197l.839-3.357L12 12 6.32 9.16l-.839-3.357L18.651 12l-13.17 6.197z">
+    </path>
+  </svg>Sent</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" d="M0 0h24v24H0V0z"></path>
+    <path
+      d="M15 19H3l4.5-7L3 5h12c.65 0 1.26.31 1.63.84L21 12l-4.37 6.16c-.37.52-.98.84-1.63.84zm-8.5-2H15l3.5-5L15 7H6.5l3.5 5-3.5 5z">
+    </path>
+  </svg>Important</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path fill="none" d="M0 0L24 0 24 24 0 24z"></path>
+      <path
+        d="M20 2c.552 0 1 .448 1 1v3.757l-2 2V4H5v16h14v-2.758l2-2V21c0 .552-.448 1-1 1H4c-.552 0-1-.448-1-1V3c0-.552.448-1 1-1h16zm1.778 6.808l1.414 1.414L15.414 18l-1.416-.002.002-1.412 7.778-7.778zM13 12v2H8v-2h5zm3-4v2H8V8h8z">
+      </path>
+    </g>
+  </svg>Drafts</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path fill-rule="nonzero"
+        d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z">
+      </path>
+    </g>
+  </svg>Spam</div>
+<div class="w-full flex items-center hover:bg-slate-100  text-slate-700 rounded-r-full py-2 text-sm px-6 font-medium">
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5 mr-3"
+    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+    </path>
+    <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+  </svg>Trash</div>
+<hr class="ml-2">

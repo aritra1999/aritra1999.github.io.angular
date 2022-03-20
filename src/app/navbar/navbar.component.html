@@ -1,0 +1,61 @@
+<div class="z-40 flex h-20 justify-between items-center px-8 border-b border-slate-200 fixed w-full bg-white">
+  <div class="flex items-center text-slate-800 font-semibold">
+    <button (click)="this.toggleLeftBar()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500 mr-4" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+      </svg>
+    </button>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+      class="h-7 w-7 mr-2 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+      <title></title>
+      <path
+        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+      </path>
+    </svg>
+    MyMail
+  </div>
+  <div class="bg-slate-100 py-3 px-4 w-1/3 rounded-lg text-slate-600 text-sm flex justify-between items-center">
+    <input type="search" name="name" placeholder="Search all conversations" class="bg-slate-100 w-full p-1 mx-2" />
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+  </div>
+  <div class="flex items-center">
+    <div
+      class="flex h-10 px-6 mr-3 rounded-full border border-slate-200 text-slate-800 text-sm hover:bg-slate-100 hover:border-slate-100 justify-center items-center">
+      <div class="h-3 w-3 rounded-full bg-green-500 mr-3"></div>
+      Active
+    </div>
+
+    <div class="p-3 hover:bg-slate-100 rounded-full mr-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-500" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    </div>
+    <div class="p-3 hover:bg-slate-100 rounded-full mr-2">
+      <svg stroke="currentColor" class="h-6 w-6 text-slate-500" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+        <path
+          d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z">
+        </path>
+      </svg>
+    </div>
+    <div class="p-3 hover:bg-slate-100 rounded-full mr-2">
+      <svg stroke="currentColor" class="h-6 w-6 text-slate-500" fill="currentColor" stroke-width="0"
+        viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M104 160a56 56 0 1156-56 56.06 56.06 0 01-56 56zm152 0a56 56 0 1156-56 56.06 56.06 0 01-56 56zm152 0a56 56 0 1156-56 56.06 56.06 0 01-56 56zM104 312a56 56 0 1156-56 56.06 56.06 0 01-56 56zm152 0a56 56 0 1156-56 56.06 56.06 0 01-56 56zm152 0a56 56 0 1156-56 56.06 56.06 0 01-56 56zM104 464a56 56 0 1156-56 56.06 56.06 0 01-56 56zm152 0a56 56 0 1156-56 56.06 56.06 0 01-56 56zm152 0a56 56 0 1156-56 56.06 56.06 0 01-56 56z">
+        </path>
+      </svg>
+    </div>
+    <div (click)="this.toggleDropDown()">
+      <img src="/assets/images/navbar-user.jpg" class="h-10 w-10 object-cover rounded-full  hover:ring-4 hover:ring-slate-300" alt="User" />
+    </div>
+  </div>
+</div>

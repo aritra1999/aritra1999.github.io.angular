@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<div class="w-screen h-screen">
+  <div class="w-screen relative">
+    <app-navbar *ngIf="screen === 'large'" [toggleDropDown]="toogleDropDown" [toggleLeftBar]="toggleLeftBar">
+    </app-navbar>
+    <app-navbar-small *ngIf="(screen === 'small' || screen === 'medium')" [toggleDropDown]="toogleDropDown"
+      [toggleLeftBar]="toggleLeftBar">
+    </app-navbar-small>
+    <app-profile-dropdown *ngIf="showDropDown"></app-profile-dropdown>
+    <app-leftbar [showLeftBar]="showLeftBar"></app-leftbar>
+  </div>
+</div>
+<router-outlet></router-outlet>
