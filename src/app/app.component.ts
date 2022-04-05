@@ -20,13 +20,20 @@ export class AppComponent {
     this.getScreenHeight = window.innerHeight;
     this.screen = this.setScreenDim();
     this.showDropDown = false; 
-    this.showLeftBar = true; 
+    if(this.getScreenWidth <= 1280) {
+      this.showLeftBar = false;
+    } else {
+      this.showLeftBar = true; 
+    }
   }
 
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
+    if(window.innerWidth <= 1280) {
+      this.showLeftBar = false;
+    }
     this.screen = this.setScreenDim();
   }
 

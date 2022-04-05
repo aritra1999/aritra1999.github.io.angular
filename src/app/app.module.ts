@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarSmallComponent } from './navbar-small/navbar-small.component';
 import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
 import { LeftbarComponent } from './leftbar/leftbar.component';
+import { EmailListComponent } from './email-list/email-list.component';
+import { EmailBodyComponent } from './email-body/email-body.component';
+import { EmailTopbarComponent } from './email-topbar/email-topbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { LeftbarComponent } from './leftbar/leftbar.component';
     NavbarComponent,
     NavbarSmallComponent,
     ProfileDropdownComponent,
-    LeftbarComponent
+    LeftbarComponent,
+    EmailListComponent,
+    EmailBodyComponent,
+    EmailTopbarComponent
   ],
   imports: [
     BrowserModule,

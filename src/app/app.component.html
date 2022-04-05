@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <div class="w-screen h-screen">
   <div class="w-screen relative">
     <app-navbar *ngIf="screen === 'large'" [toggleDropDown]="toogleDropDown" [toggleLeftBar]="toggleLeftBar">
@@ -9,6 +8,13 @@
     </app-navbar-small>
     <app-profile-dropdown *ngIf="showDropDown"></app-profile-dropdown>
     <app-leftbar [showLeftBar]="showLeftBar"></app-leftbar>
+  </div>
+  <div class="w-full h-screen pt-20 ease-in-out transition-all duration-300 overflow-x-hidden" [ngClass]="[showLeftBar ? 'pl-72' : 'pl-0']">
+    <app-email-topbar *ngIf="screen === 'large'"></app-email-topbar>
+    <div class="flex h-full">
+      <app-email-list [ngClass]="[screen === 'large' ? 'w-[450px]' : 'w-full']" class="border-r h-full border-slate-200"></app-email-list>
+      <app-email-body *ngIf="screen === 'large'" class="w-[calc(100% - 450px)]"></app-email-body>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>
