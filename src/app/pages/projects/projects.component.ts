@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-projects',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  projects: any = [];
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { 
+    this.httpClient.get("assets/projects.json").subscribe((data: any) =>{
+      this.projects = data;
+    })
+  }
 
   ngOnInit(): void {
   }

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PapersComponent implements OnInit {
 
-  constructor() { }
+  papers: any = [];
+
+  constructor(private httpClient: HttpClient) { 
+    this.httpClient.get("assets/articles.json").subscribe((data: any) =>{
+      this.papers = data;
+    })
+  }
 
   ngOnInit(): void {
   }

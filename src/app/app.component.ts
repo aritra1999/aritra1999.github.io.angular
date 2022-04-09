@@ -26,6 +26,10 @@ export class AppComponent {
     } else {
       this.showLeftBar = true; 
     }
+    router.events.subscribe((val) => {
+      if(this.router.url !== '/')
+        this.showLeftBar = false;
+    });
   }
 
   @HostListener('window:resize', ['$event'])
@@ -37,6 +41,7 @@ export class AppComponent {
       this.showLeftBar = false;
     }
   }
+
 
   setScreenDim = () => {
     if(this.getScreenWidth <= 600) return "small";  

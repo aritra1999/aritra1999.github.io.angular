@@ -12,11 +12,8 @@ export class PageTopComponent implements OnInit {
   constructor(private router: Router) {
     this.page = this.router.url.charAt(1).toUpperCase() + this.router.url.slice(2);
     router.events.subscribe((val) => {
-      console.log(val);
       this.page = this.router.url.charAt(1).toUpperCase() + this.router.url.slice(2);
     });
   }
-
   ngOnInit(): void { }
-
 }

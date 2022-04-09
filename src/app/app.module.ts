@@ -18,6 +18,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageTopComponent } from './utils/page-top/page-top.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './utils/card/card.component';
 
 const routes: Routes = [
   { path: '', component: DefaultComponent },
@@ -44,12 +46,14 @@ const routes: Routes = [
     ResumeComponent,
     AboutComponent,
     DefaultComponent,
-    PageTopComponent
+    PageTopComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   exports: [
     RouterModule

@@ -10,8 +10,7 @@ export class EmailBodyComponent implements OnInit {
   @Input() page: string | undefined
 
   constructor() { }
-
   ngOnInit(): void {
+    
   }
-
 }
