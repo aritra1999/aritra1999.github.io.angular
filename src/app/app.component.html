@@ -13,5 +13,10 @@
       <app-email-body *ngIf="!(screen !== 'large' && this.router.url === '/')" [ngClass]="[screen !== 'large' ? 'absolute top-20 left-0 w-screen h-[calc(100vh-5rem)]' : 'w-full']" class="overflow-y-auto bg-white" [screen]="screen" [page]="this.router.url"></app-email-body>
     </div>
   </div>
+  <div class="absolute bottom-0 w-screen bg-green-50 flex justify-center">
+    <div class="text-green-500 px-6 py-2 rounded-lg">
+      Work in progress!
+    </div>
+  </div>
 </div>
 
