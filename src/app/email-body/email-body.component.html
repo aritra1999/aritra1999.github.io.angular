@@ -1,1 +1,4 @@
-<p>email-body works!</p>
+<div class="w-full overflow-y-auto h-full">
+    <app-page-top *ngIf="page !== '/'" [screen]="screen"></app-page-top>
+    <router-outlet></router-outlet>
+</div>

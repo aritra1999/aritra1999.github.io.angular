@@ -1,4 +1,5 @@
-import { Component, HostListener, Output } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent {
   public screen: string; 
   ngOnInit() {}
 
-  constructor() {
+  constructor(public router: Router) {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
     this.screen = this.setScreenDim();
@@ -31,10 +32,10 @@ export class AppComponent {
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
+    this.screen = this.setScreenDim();
     if(window.innerWidth <= 1280) {
       this.showLeftBar = false;
     }
-    this.screen = this.setScreenDim();
   }
 
   setScreenDim = () => {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-email-body',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./email-body.component.scss']
 })
 export class EmailBodyComponent implements OnInit {
+  @Input() screen: string | undefined;
+  @Input() page: string | undefined
 
   constructor() { }
 
