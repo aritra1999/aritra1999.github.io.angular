@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import mixpanel from 'mixpanel-browser';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,8 @@ export class AppComponent {
       if(this.router.url !== '/')
         this.showLeftBar = false;
     });
+    mixpanel.init('6fb9e6d54447f924553e27092ba9314a', {debug: true}); 
+    mixpanel.track('Page ' + this.router.url);
   }
 
   @HostListener('window:resize', ['$event'])
