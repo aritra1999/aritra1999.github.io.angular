@@ -6,17 +6,17 @@
     <app-profile-dropdown *ngIf="showDropDown"></app-profile-dropdown>
     <app-leftbar [showLeftBar]="showLeftBar"></app-leftbar>
   </div>
-  <div class="w-full h-screen pt-20 ease-in-out transition-all duration-300 overflow-hidden" [ngClass]="[showLeftBar ? 'pl-72' : 'pl-0']">
+  <div class="w-full h-screen pt-20 ease-in-out transition-all duration-300 overflow-hidden" [ngClass]="[showLeftBar && screen == 'large' ? 'pl-72' : 'pl-0']">
     <app-email-topbar *ngIf="screen === 'large'"></app-email-topbar>
     <div class="flex h-[calc(100vh-6rem)] w-full">
       <app-email-list [ngClass]="[screen === 'large' ? 'min-w-fit' : 'w-full']" class="overflow-y-auto border-r h-full border-slate-200 bg-white"></app-email-list>
       <app-email-body *ngIf="!(screen !== 'large' && this.router.url === '/')" [ngClass]="[screen !== 'large' ? 'absolute top-20 left-0 w-screen h-[calc(100vh-5rem)]' : 'w-full']" class="overflow-y-auto bg-white" [screen]="screen" [page]="this.router.url"></app-email-body>
     </div>
   </div>
-  <div class="absolute bottom-0 w-screen bg-green-50 flex justify-center">
-    <div class="text-green-500 px-6 py-2 rounded-lg">
-      Work in progress!
-    </div>
-  </div>
 </div>
 
+<div class="absolute bottom-0 w-screen bg-green-50 flex justify-center">
+  <div class="text-green-500 px-6 py-2 rounded-lg">
+    Work in progress!
+  </div>
+</div>
