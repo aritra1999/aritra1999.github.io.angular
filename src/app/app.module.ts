@@ -20,6 +20,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageTopComponent } from './utils/page-top/page-top.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './utils/card/card.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', component: DefaultComponent },
@@ -52,6 +53,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
