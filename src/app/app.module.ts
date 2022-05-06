@@ -21,6 +21,7 @@ import { PageTopComponent } from './utils/page-top/page-top.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './utils/card/card.component';
 import { FormsModule } from '@angular/forms';
+import { AboutCardComponent } from './utils/about-card/about-card.component';
 
 const routes: Routes = [
   { path: '', component: DefaultComponent },
@@ -48,7 +49,8 @@ const routes: Routes = [
     AboutComponent,
     DefaultComponent,
     PageTopComponent,
-    CardComponent
+    CardComponent,
+    AboutCardComponent
   ],
   imports: [
     BrowserModule,

@@ -50,7 +50,7 @@ export class AppComponent {
   }
 
   toogleDropDown = () => { this.showDropDown = !this.showDropDown }
-  toggleLeftBar = () => { this.showLeftBar = !this.showLeftBar; console.log(this.showLeftBar);}
+  toggleLeftBar = () => { this.showLeftBar = !this.showLeftBar }
 
 }
 
