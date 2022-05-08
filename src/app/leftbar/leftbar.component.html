@@ -97,9 +97,9 @@
     </svg>
   </div>  
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <div class="p-4 rounded-b-lg">
-      <input name="From" [(ngModel)]="contact.from" type="text" placeholder="From" class="bg-white w-full py-2 px-4 mb-2 border-b border-slate-200" [ngClass]="{'border-red-400 bg-red-50': !from.valid }" #from="ngModel" required/>
-      <input name="Subject" [(ngModel)]="contact.subject" type="text" placeholder="Subject" class="bg-white w-full py-2 px-4 mb-2 border-b border-slate-200" [ngClass]="{'border-red-400 bg-red-50': !subject.valid }" #subject="ngModel" required/>
+    <div class="p-4 rounded-b-lg">2
+      <input name="From" [(ngModel)]="contact.from" type="text" placeholder="From" class="bg-white w-full py-2 px-4 mb-2 border-b border-slate-200" #from="ngModel" required/>
+      <input name="Subject" [(ngModel)]="contact.subject" type="text" placeholder="Subject" class="bg-white w-full py-2 px-4 mb-2 border-b border-slate-200" #subject="ngModel" required/>
       <textarea name="Message" [(ngModel)]="contact.message" placeholder="Message" class="bg-white w-full py-2 px-4 mb-2 border-b border-white resize-none" [ngClass]="{'border-red-400 bg-red-50': !message.valid, 'h-48': screen === 'small', 'h-80': screen !== 'small' }" #message="ngModel"></textarea>
       <div class="flex items-center justify-between">
         <button class="px-12 py-2 bg-blue-600 rounded-lg text-white font-semibold shadow-lg" type="submit">Send</button>
@@ -136,3 +136,4 @@
 </div>
 
 
+<!-- [ngClass]="{'border-red-400 bg-red-50': !from.valid }"  -->
