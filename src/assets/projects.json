@@ -1,5 +1,22 @@
 [
     {
+        "title": "Self Driving Car",
+        "thumbnail": "sdc.png",
+        "description": "Sef driving car using basic nural networks and no libraries.",
+        "links": [
+            {
+                "type": "Github",
+                "link": "https://github.com/aritra1999/SDC"
+            },
+            {
+                "type": "Live Demo",
+                "link": "https://aritra1999.github.io/SDC/"
+            }
+        ],
+        "tags": ["JS", "Nural Networks"],
+        "ongoing": false
+    },
+    {
         "title": "Better Class",
         "thumbnail": "betterclass.png",
         "description": "A classroom space with realtime white-board and chat system to discuss and collaborate on ideas using web sockets.",
@@ -62,7 +79,7 @@
             }
         ],
         "tags": ["Python", "Django", "Lambda Functions", "AWS", "EC2"],
-        "ongoing": true
+        "ongoing": false
     },
     {
         "title": "CP-IDE",
