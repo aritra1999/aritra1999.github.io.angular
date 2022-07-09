@@ -56,19 +56,6 @@
         "ongoing": true
     },
     {
-        "title": "MySite",
-        "thumbnail": "mysite.png",
-        "description": "Personal Portfolio.",
-        "links": [
-            {
-                "type": "Live Site",
-                "link": "https://aritra1999.github.io"
-            }
-        ],
-        "tags": ["Node", "React", "Github", "Tailwind"],
-        "ongoing": true
-    },
-    {
         "title": "Codevox",
         "thumbnail": "codevox.png",
         "description": "A free and collaborative portal for coding assignments help students and teachers to assess coding skills efficiently.",
