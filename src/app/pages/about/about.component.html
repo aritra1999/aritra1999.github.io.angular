@@ -4,7 +4,7 @@
             Work Experience
         </span>
         <div class="p-4 md:columns-2 columns-1 gap-6">
-            <app-about-card *ngFor="let experience of items.experience" [item]="experience"></app-about-card>
+            <app-about-card class="inline-block w-full" *ngFor="let experience of items.experience" [item]="experience"></app-about-card>
         </div>
     </div>
     <div class="my-4">
@@ -42,7 +42,7 @@
             Eucation
         </span>
         <div class="p-4 md:columns-2 columns-1 gap-6">
-            <app-about-card *ngFor="let education of items.education" [item]="education"></app-about-card>
+            <app-about-card class="inline-block w-full" *ngFor="let education of items.education" [item]="education"></app-about-card>
         </div>
     </div>                
 </div>
