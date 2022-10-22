@@ -3,34 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NavbarSmallComponent } from './navbar-small/navbar-small.component';
-import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
-import { LeftbarComponent } from './leftbar/leftbar.component';
-import { EmailListComponent } from './email-list/email-list.component';
-import { EmailBodyComponent } from './email-body/email-body.component';
-import { EmailTopbarComponent } from './email-topbar/email-topbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarSmallComponent } from './components/navbar-small/navbar-small.component';
+import { ProfileDropdownComponent } from './components/profile-dropdown/profile-dropdown.component';
+import { EmailBodyComponent } from './layout/email-body/email-body.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { PapersComponent } from './pages/papers/papers.component';
 import { ResumeComponent } from './pages/resume/resume.component';
-import { AboutComponent } from './pages/about/about.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { RouterModule, Routes } from '@angular/router';
-import { PageTopComponent } from './utils/page-top/page-top.component';
+import { PageTopComponent } from './components/page-top/page-top.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CardComponent } from './utils/card/card.component';
-import { FormsModule } from '@angular/forms';
-import { AboutCardComponent } from './utils/about-card/about-card.component';
 
-const routes: Routes = [
-  { path: '', component: DefaultComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'papers', component: PapersComponent },
-];
+import { FormsModule } from '@angular/forms';
+import { AboutCardComponent } from './components/about-card/about-card.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { LeftbarComponent } from './components/leftbar/leftbar.component';
+import { EmailListComponent } from './layout/email-list/email-list.component';
+import { EmailTopbarComponent } from './layout/email-topbar/email-topbar.component';
+
 
 @NgModule({
   declarations: [
@@ -49,14 +42,14 @@ const routes: Routes = [
     AboutComponent,
     DefaultComponent,
     PageTopComponent,
-    CardComponent,
-    AboutCardComponent
+    ProjectsComponent,
+    AboutCardComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes),
     HttpClientModule
   ],
   exports: [

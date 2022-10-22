@@ -63,6 +63,9 @@
             {
                 "type": "Live Site",
                 "link": "http://codevox.kiit.ac.in/"
+            }, {
+                "type": "Trailer",
+                "link": "https://www.youtube.com/watch?v=UvBxxdOy1fI"
             }
         ],
         "tags": ["Python", "Django", "Lambda Functions", "AWS", "EC2"],

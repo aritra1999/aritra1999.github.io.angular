@@ -4,33 +4,39 @@
             "name": "LeanIX",
             "logo": "leanix.png",
             "url": "https://leanix.net/",
-            "role": "Software Development Enginner - L3",
-            "duration": "June 2022",
-            "description": [
-                "Upcoming."
+            "roles": [
+                {
+                    "role": "Software Development Enginner - L3",
+                    "latest": true,
+                    "duration": "June 2022 - Present",
+                    "description": [
+                        "Under NDA."
+                    ]
+                }, {
+                    "role": "Software Enginnering Intern",
+                    "duration": "December 2021 - April 2022",
+                    "description": [
+                        "Under NDA."
+                    ]
+                }
             ]
-        },
-        {
-            "name": "LeanIX",
-            "logo": "leanix.png",
-            "url": "https://leanix.net/",
-            "role": "Software Enginnering Intern",
-            "duration": "December 2021 - April 2022",
-            "description": [
-                "Under NDA."
-            ]
+            
         },
         {
             "name": "Softway",
             "logo": "softway.png",
             "url": "https://www.softway.com/",
-            "role": "Full-Stack Engineering Intern",
-            "duration": "December 2020 - August 2021",
-            "description": [
-                "Pitched and implemented dynamic design system tool Masalabook which helps developers build interfaces easily and efficiently.",
-                "Implemented Mixpanel analytics on products to provide various metrics like user engagement, user commitment.",
-                "Implemented mobile push notifications using OneSignal for Android and IOS.",
-                "Fixed bugs and helped import code from JS to TS on Softway SSO(Softway Single Sign-on) portal."
+            "roles": [
+                {
+                    "role": "Full-Stack Engineering Intern",
+                    "duration": "December 2020 - August 2021",
+                    "description": [
+                        "Pitched and implemented dynamic design system tool Masalabook which helps developers build interfaces easily and efficiently.",
+                        "Implemented Mixpanel analytics on products to provide various metrics like user engagement, user commitment.",
+                        "Implemented mobile push notifications using OneSignal for Android and IOS.",
+                        "Fixed bugs and helped import code from JS to TS on Softway SSO(Softway Single Sign-on) portal."
+                    ]
+                }
             ],
             "technologies": [ "Node", "React", "Typescript", "AWS", "Azure", "OneSignal", "Django", "SendGrid"]
 
@@ -39,11 +45,15 @@
             "name": "Testmandi",
             "logo": "testmandi.jpg",
             "url": "https://testmandi.com/",
-            "role": "Full-Stack Engineering Intern",
-            "duration": "May 2020 - July 2020",
-            "description": [
-                "Designed back-end architecture, databases, developed online compiler, code checking module, practice module, assessment management module, user authentication, and etc.",
-                "Deployed and maintained the codebase on AWS."
+            "roles": [
+                {
+                    "role": "Full-Stack Engineering Intern",
+                    "duration": "May 2020 - July 2020",
+                    "description": [
+                        "Designed back-end architecture, databases, developed online compiler, code checking module, practice module, assessment management module, user authentication, and etc.",
+                        "Deployed and maintained the codebase on AWS."
+                    ]
+                }
             ],
             "technologies": ["AWS", "Django", "SendGrid", "Heroku"]
         },
@@ -51,11 +61,15 @@
             "name": "Bharg",
             "logo": "bharg.png",
             "url": "https://www.bharg.com/",
-            "role": "UI/UX Designer and Back-End Developer Intern",
-            "duration": "May 2019 - May 2020",
-            "description": [
-                "Designed apps and web screens on assigned projects. Researched thoroughly on the app and web design and prototyped screens.",
-                "Developed back-end systems, implemented and managed databases, and deployed Django apps."
+            "roles": [
+                {
+                    "role": "UI/UX Designer and Back-End Developer Intern",
+                    "duration": "May 2019 - May 2020",
+                    "description": [
+                        "Designed apps and web screens on assigned projects. Researched thoroughly on the app and web design and prototyped screens.",
+                        "Developed back-end systems, implemented and managed databases, and deployed Django apps."
+                    ]
+                }
             ],
             "technologies": ["AWS", "Django", "Heroku", "Adobe XD", "Figma", "UI/UX"]
         }
@@ -64,8 +78,8 @@
         {
             "name": "Kalinga Institute of Industrial Technology",
             "logo": "kiit.png",
-            "scope": "Bachelor of Technology",
             "role": "Information Technology",
+            "scope": "Bachelor of Technology",
             "score": "8.7 / 10.0",
             "duration": "June 2018 - May 2022",
             "url": "https://kiit.ac.in"

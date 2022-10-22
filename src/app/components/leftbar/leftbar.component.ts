@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ContactService } from '../app.service';
+
 
 export class Contact {
   from: string | undefined;
@@ -20,7 +20,7 @@ export class LeftbarComponent implements OnInit {
   contact = new Contact();
   showContact: boolean;
 
-  constructor(private contactService: ContactService) { 
+  constructor() { 
     this.showContact = false;
   }
 
