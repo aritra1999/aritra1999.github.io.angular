@@ -1,5 +1,18 @@
 [
     {
+        "title": "Designing a Video Streaming Platform 📹",
+        "thumbnail": "blog1.png",
+        "description": "",
+        "links": [
+            {
+                "type": "Read on Dev.to",
+                "link": "https://dev.to/aritra1999/designing-a-video-streaming-platform-a6e"
+            }
+        ],
+        "tags": ["Video streaming", "System Design", "architecture"],
+        "ongoing": false
+    },
+    {
         "title": "Effects of different filters on text extractions from videos using TESSERACT",
         "thumbnail": "paper1.png",
         "description": "",
