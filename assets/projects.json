@@ -1,5 +1,39 @@
 [
     {
+        "title": "rand0m",
+        "thumbnail": "random.png",
+        "description": "A collection of random apps, games and links",
+        "links": [
+            {
+                "type": "Github",
+                "link": "https://github.com/aritra1999/random"
+            },
+            {
+                "type": "Vist site",
+                "link": "https://rand0m.vercel.app/"
+            }
+        ],
+        "tags": ["JS", "Svelte", "Vercel"],
+        "ongoing": false
+    },
+    {
+        "title": "GitBub",
+        "thumbnail": "gitbub.png",
+        "description": "Fancy github profile page",
+        "links": [
+            {
+                "type": "Github",
+                "link": "https://github.com/aritra1999/gitbub"
+            },
+            {
+                "type": "Vist site",
+                "link": "https://gitbub.vercel.app/aritra1999"
+            }
+        ],
+        "tags": ["JS", "Angular", "Github API", "Vercel"],
+        "ongoing": false
+    },
+    {
         "title": "Self Driving Car",
         "thumbnail": "sdc.png",
         "description": "Sef driving car using basic nural networks and no libraries.",
@@ -9,11 +43,11 @@
                 "link": "https://github.com/aritra1999/SDC"
             },
             {
-                "type": "Live Demo",
+                "type": "Visit Site",
                 "link": "https://aritra1999.github.io/SDC/"
             }
         ],
-        "tags": ["JS", "Nural Networks"],
+        "tags": ["JS", "Nural Networks", "Github Pages"],
         "ongoing": false
     },
     {
