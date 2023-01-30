@@ -7,7 +7,7 @@
     <app-leftbar [showLeftBar]="showLeftBar" [screen]="screen"></app-leftbar>
   </div>
 
-  <div class="w-full h-screen pt-20 ease-in-out transition-all duration-300 overflow-hidden" [ngClass]="[showLeftBar && screen == 'large' ? 'pl-72' : 'pl-0']">
+  <div class="w-full rounded-lg h-screen pt-20 ease-in-out transition-all duration-300 overflow-hidden" [ngClass]="[showLeftBar && screen == 'large' ? 'pl-72' : 'pl-0']">
     <app-email-topbar *ngIf="screen === 'large'"></app-email-topbar>
     <div class="flex h-[calc(100vh-6rem)] w-full">
       <app-email-list [ngClass]="[screen === 'large' ? 'min-w-fit' : 'w-full']" class="overflow-y-auto border-r h-full border-slate-200 bg-white"></app-email-list>
